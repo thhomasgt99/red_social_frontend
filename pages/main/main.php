@@ -4,7 +4,7 @@
 		top: 3vh; background-color: #ffffff; height: 87vh; margin-top: 3vh;">
 			<ul class="list-unstyled">
 				<li>
-					<a href="#" style="color: black;">
+					<a href="/messages" style="color: black;">
 						<i class="bi bi-chat-dots" style="font-size: 3rem; margin-right: 2rem;"></i>Mensajes
 					</a>
 				</li>
@@ -180,7 +180,7 @@
 		</main>
 
 		<!-- aside derecho -->
-		<aside class="aside-derecho w-25 display-flex rounded">
+		<aside class="aside-derecho w-25 display-flex rounded" style="padding-top: 2rem;">
 			<div class="d-flex justify-content-around">
 				<p>11:37 AM</p>
 				<p>Tibirita</p>

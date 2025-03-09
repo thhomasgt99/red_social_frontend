@@ -14,23 +14,31 @@
 <body class="body" style="background-color:rgb(233, 233, 233);">
 
 	<?php
-	require_once 'pages/headers/headermobile.php';
-	require_once 'pages/headers/headerdesktop.php';
-	?>
+	$url = $_SERVER['REQUEST_URI'];
 
-	<?php
-	$path = $_SERVER['REQUEST_URI'];
-	$ultimo_corte = basename($path);
+	// Extraer la última parte de la URL
+	$ultimaParte = basename(parse_url($url, PHP_URL_PATH));
 
-	switch ($ultimo_corte) {
-		case 'messages':
-			require_once 'pages/messages/messages.php';
-			break;
-		default:
-			require_once 'pages/main/main.php';
-			break;
+	// Verificar si es "login.php"
+	if ($ultimaParte === 'login') {
+		require_once 'pages/login/login.php';
+	} else if($ultimaParte === 'register'){
+		require_once 'pages/register/register.php';
+	}else {
+		require_once 'pages/headers/headermobile.php';
+		require_once 'pages/headers/headerdesktop.php';
+		$path = $_SERVER['REQUEST_URI'];
+		$ultimo_corte = basename($path);
+
+		switch ($ultimo_corte) {
+			case 'messages':
+				require_once 'pages/messages/messages.php';
+				break;
+			default:
+				require_once 'pages/main/main.php';
+				break;
+		}
 	}
-
 	?>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
