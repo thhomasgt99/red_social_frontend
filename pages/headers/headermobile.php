@@ -12,7 +12,7 @@
                 <a class="nav-link" href="#"><i style="color: black;" class="bi bi-bell"></i></a>
                 <a class="nav-link" href="#"><i style="color: black;" class="bi bi-gear"></i></a>
                 <a class="nav-link" href="#">
-                    <img src="assets/imgs/xenomorfo.jpg" class="rounded-circle" style="width:50px;height:50px;" alt="">
+                    <img src="assets/imgs/perfil.png" class="rounded-circle" style="width:50px;height:50px;" alt="">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">

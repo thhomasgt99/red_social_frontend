@@ -11,7 +11,7 @@
 				<a class="navbar-brand" href="#"><i class="fa-regular fa-bell" aria-hidden="true"></i></a>
 				<a class="" style="color: black;" aria-current="page" href="#"><i class="fa-regular fa-message me-2" aria-hidden="true"></i></a>
 				<a class="navbar-brand" href="#">
-					<img src="assets/imgs/xenomorfo.jpg" class="rounded-circle" style="width:50px;height:50px;" alt="">
+					<img src="./assets/imgs/perfil.png" class="rounded-circle" style="width:50px;height:50px;" alt="">
 				</a>
 				<a class="navbar-brand" href="#"><i class="fa-solid fa-gear" aria-hidden="true"></i></a>
 			</div>

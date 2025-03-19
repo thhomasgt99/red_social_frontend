@@ -22,17 +22,20 @@
 	// Verificar si es "login.php"
 	if ($ultimaParte === 'login') {
 		require_once 'pages/login/login.php';
-	} else if($ultimaParte === 'register'){
+	} else if ($ultimaParte === 'register') {
 		require_once 'pages/register/register.php';
-	}else {
+	} else {
 		require_once 'pages/headers/headermobile.php';
 		require_once 'pages/headers/headerdesktop.php';
 		$path = $_SERVER['REQUEST_URI'];
-		$ultimo_corte = basename($path);
+		$ultimo_corte = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));;
 
 		switch ($ultimo_corte) {
 			case 'messages':
 				require_once 'pages/messages/messages.php';
+				break;
+			case 'profile':
+				require_once 'pages/profile/profile.php';
 				break;
 			default:
 				require_once 'pages/main/main.php';
@@ -57,10 +60,23 @@
 				};
 
 				if (anchoPantalla < 990) {
-					document.querySelector('.main').classList.replace('w-50', 'w-100');
-					document.querySelector('.main').classList.add('ms-0');
-					document.querySelector('.container-main').classList.add('flex-column-reverse');
-					document.querySelector('.aside-derecho').classList.add('w-100', 'ms-0');
+					// document.querySelector('.main').classList.replace('w-50', 'w-10');
+					// document.querySelector('.main').classList.add('ms-0');
+					<?php
+					$uri = trim($_SERVER['REQUEST_URI'], '/');
+					$lastPart = basename($uri);
+						if($lastPart != 'profile' & $lastPart !=  'profilepropio'){
+							// echo "document.querySelector('.container-main').classList.add('flex-column-reverse');";
+						}else{
+							echo "if(document.querySelector('.container-main').classList.contains('container-main-profile');){
+								document.querySelector('.container-main').classList.add('flex-row');
+							}";
+							
+						}
+					?>
+					if(!document.querySelector('.aside-derecho').classList.contains("aside-derecho-profile")){
+						document.querySelector('.aside-derecho').classList.add('w-100', 'ms-0');
+					}
 
 				} else {
 					document.querySelector('.main').classList.replace('w-100', 'w-50');

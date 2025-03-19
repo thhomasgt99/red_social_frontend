@@ -44,13 +44,13 @@
 			<!-- publicaciones -->
 			<div class="publication" style="position: relative;">
 				<div class="d-flex justify-content-between">
-					<div class="d-flex">
-						<img class="rounded-circle" src="./assets/imgs/xenomorfo.jpg" alt="" style="height: 5rem; width: 5rem;">
+					<a href="/profile" class="d-flex">
+						<img class="rounded-circle" src="./assets/imgs/perfil.png" alt="" style="height: 5rem; width: 5rem;">
 						<div class="ms-3">
 							<p class="mb-0">Juan Miguel</p>
 							<p class="mb-0">Hace 3 horas</p>
 						</div>
-					</div>
+					</a>
 					<div class="ms-5">
 						<button data-bs-toggle="collapse" data-bs-target="#demo2"
 							style="background-color: transparent; border: none;"><i class="bi bi-three-dots"></i></button>
@@ -110,13 +110,13 @@
 
 			<div class="publication" style="position: relative;">
 				<div class="d-flex justify-content-between">
-					<div class="d-flex">
-						<img class="rounded-circle" src="./assets/imgs/xenomorfo.jpg" alt="" style="height: 5rem; width: 5rem;">
+					<a href="/profile" class="d-flex">
+						<img class="rounded-circle" src="./assets/imgs/perfil.png" alt="" style="height: 5rem; width: 5rem;">
 						<div class="ms-3">
 							<p class="mb-0">Juan Miguel</p>
 							<p class="mb-0">Hace 3 horas</p>
 						</div>
-					</div>
+					</a>
 					<div class="ms-5">
 						<button data-bs-toggle="collapse" data-bs-target="#demo"
 							style="background-color: transparent; border: none;"><i class="bi bi-three-dots"></i></button>
@@ -155,7 +155,7 @@
 						voluptatem facilis aliquam itaque ea voluptatum reprehenderit. Quis odit labore nulla sapiente, adipisci
 						laudantium corporis quia!?
 					</p>
-					<img src="./assets/imgs/xenomorfo.jpg" alt="" style="width: 100%;">
+					<img src="./assets/imgs/perfil.png" alt="" style="width: 100%;">
 				</div>
 
 				<div class="d-flex">

@@ -39,6 +39,48 @@ i {
 	background-repeat: no-repeat;
 }
 
+.container-main-profile {
+	flex-direction: column;
+}
+
+.container-main-profile .aside-izquierdo {
+	position: relative;
+	order: 1;
+}
+.container-main-profile .aside-derecho {
+	order: 2;
+}
+.container-main-profile main {
+	order: 3;
+}
+
+.boton-profile {
+	width: 150px;
+	border-radius: 50px;
+}
+
+.botonera-profile {
+	margin-top: 20%;
+}
+
+.main-profile {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container-aside-profile {
+	margin-top: 28%;
+}
+@media (min-width: 320px) {
+	.botonera-profile {
+		flex-direction: column;
+	}
+}
+@media (min-width: 320px) {
+	.aside-izquierdo-profile {
+		height: 110vh;
+	}
+}
 @media (max-width: 750px) {
 	.main-login {
 		flex-direction: column-reverse;
@@ -51,6 +93,10 @@ i {
 	}
 	.main-login-form form {
 		width: 80vw;
+	}
+	.aside-derecho-profile {
+		height: 70vh;
+		display: none;
 	}
 }
 @media (min-width: 751px) {
@@ -69,9 +115,81 @@ i {
 	.main-login-form form {
 		width: 30vw;
 	}
+	.profile {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.aside-izquierdo-profile{
+		width: 50%;
+		margin-left: 2rem;
+    margin-top: 2rem;
+	}
+	.aside-derecho-profile {
+		width: 25% ;
+		display: flex;
+		height: 90vh;
+    flex-direction: column;
+		align-items: center;
+
+	}
+	.aside-derecho-profile ul {
+		list-style: none;
+	}
+	.aside-derecho-profile ul li{
+		margin-top: 1rem;
+	}
+	.aside-derecho-profile ul li img{
+		width: 90%;
+	}
+	.container-main-profile {
+		flex-direction: row;
+		margin: 1rem;
+		padding: 0;
+		position: relative;
+		gap: 2rem;
+		margin: 0 auto;
+	}
+
+	.container-main-profile .aside-izquierdo {
+		order: 1;
+		position: sticky;
+		width: 30%;
+	}
+	.container-main-profile .aside-derecho {
+		order: 3;
+		width: 30%;
+		position: sticky;
+		height: 90vh;
+	}
+	.container-main-profile main {
+		order: 2;
+		width: 30%;
+		position: sticky;
+	}
+
+	.boton-profile {
+		width: 100%;
+	}
+	.botonera-profile {
+		flex-direction: column;
+		margin-top: 20%;
+	}
+	.container-aside-profile {
+		margin-top: 45%;
+	}
+	.aside-derecho-profile {
+		height: 70vh;
+	}
+	.main-profile {
+		width: 25%;
+	}
 }
 
 @media (min-width: 990px) {
+	.container-aside-profile {
+		margin-top: 30%;
+	}
 	.nav-desktop {
 		display: block;
 	}
@@ -87,6 +205,7 @@ i {
 	.aside-messages a {
 		margin-left: 1rem;
 	}
+	
 }
 
 @media (max-width: 990px) {
